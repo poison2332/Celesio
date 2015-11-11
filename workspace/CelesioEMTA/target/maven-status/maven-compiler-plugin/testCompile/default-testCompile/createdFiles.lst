@@ -1,0 +1,9 @@
+requirements\Application$HabrCheck$SearchCheck.class
+requirements\Application.class
+steps\LetterSteps.class
+tests\SearchHabrTest.class
+requirements\Application$GmailLetterCheck$LetterCheck.class
+requirements\Application$HabrCheck.class
+steps\SearchSteps.class
+requirements\Application$GmailLetterCheck.class
+tests\GmailLoginTest.class

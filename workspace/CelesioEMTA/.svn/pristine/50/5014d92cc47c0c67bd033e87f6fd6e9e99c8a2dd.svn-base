@@ -1,0 +1,64 @@
+
+
+package tests;
+
+        import models.DefaultLetter;
+        import models.User;
+        import net.serenitybdd.junit.runners.SerenityRunner;
+        import net.thucydides.core.annotations.*;
+        import net.thucydides.core.pages.Pages;
+        import org.junit.Before;
+        import org.junit.Test;
+        import org.junit.runner.RunWith;
+        import org.openqa.selenium.WebDriver;
+        import requirements.Application;
+        import steps.LetterSteps;
+        import utils.CommonUtils;
+
+
+/**
+ * Created by ibautis on 04.11.2015.
+ */
+
+@RunWith(SerenityRunner.class)
+@Story(Application.GmailLetterCheck.LetterCheck.class)
+@WithTag("feature:Letter")
+public class Test1 {
+
+    @Managed
+    public WebDriver webdriver;
+
+    @ManagedPages
+    public Pages pages;
+
+    @Steps
+    public LetterSteps letterSteps;
+
+    public User user;
+    public DefaultLetter letter;
+
+    @Before
+    public void myTest() throws Exception {
+        letter = CommonUtils.createDefaultLetter();
+        user = CommonUtils.createNewUser();
+        letterSteps.openGmail();
+        System.out.print("Iruna Test");
+    }
+
+    @Issue("CEMTA-45")
+    @Test
+    public void LoginTest() throws InterruptedException {
+        letterSteps.login(user.getLogin(), user.getPassword(), user.getUserName());
+    }
+
+    /*
+    @Issue("CEMTA-45")
+    @Test
+    public void CheckingLetter() {
+        letterSteps.login(user.getLogin(), user.getPassword(), user.getUserName());
+        letterSteps.openLetter(letter.getSender());
+        letterSteps.checkLetterContent(letter.getSender(), letter.getContent(), letter.getTitle());
+    }
+*/
+
+}

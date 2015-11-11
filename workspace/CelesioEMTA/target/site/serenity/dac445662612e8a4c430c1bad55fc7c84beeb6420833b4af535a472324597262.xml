@@ -1,0 +1,22 @@
+<acceptance-test-run title="Habr Menu Test" name="habrTest" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="35831" timestamp="2015-11-11T21:32:03.055+02:00">
+  <user-story id="requirements.Application.HabrCheck" name="Habr check" path="requirements.Application"/>
+  <issues>
+    <issue>CEMTA-35</issue>
+  </issues>
+  <tags>
+    <tag name="HabrCheck" type="feature"/>
+    <tag name="Habr check" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="10660">
+    <screenshots>
+      <screenshot image="a9de255b7486e996203fdf93ef40b487_NONE.png"/>
+    </screenshots>
+    <description>Open habr Page Step</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="8295">
+    <screenshots>
+      <screenshot image="1fe52dfbf39bd1efbf9cd9cb00b1a0b8_NONE.png"/>
+    </screenshots>
+    <description>Click on menu</description>
+  </test-step>
+</acceptance-test-run>

@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    var screenshotIndex = getUrlVars()["screenshot"];
+
+	$(window).load(function() {
+	    $('#slider').nivoSlider({
+            startSlide:screenshotIndex,
+            effect:'fade',
+			animSpeed:200,
+            manualAdvance: true
+		});
+	});
+	</script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="bluetext">
+                <a href="index.html" class="bluetext">Home</a>
+                > <a href="1abdbfab36b0e6c0a533e3fdad58b70c6ae32888491911803b18ba2aba500b80.html">Letter Check</a>
+                > <a href="4a51bec56f24ca824a1ae6a4a5f61dc9473216d3c981cd61b160894ca15258b9.html">Login to Gmail </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-11-2015 21:31</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+    <!--
+    <div id="contentbody">
+        <div class="titlebar">
+        <div class="story-title">
+            <table width="1005">
+                <td width="50"><img class="story-outcome-icon" src="images/fail.png" width="25" height="25"/> </td>
+                <td width="%"><span class="test-case-title"><span
+                        class="failing-color">Login to Gmail<span class="related-issue-title">(<a target="_blank" href="https://jira.softserveinc.com/browse/CEMTA-35">CEMTA-35</a>)</span></span></span>
+                </td>
+                <td width="100"><span class="test-case-duration"><span class="greentext">36,6s</span></span>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a class="tagLink" href="08a1806fc0eb647a5ac99dd14f3a32db695c8c4471362449acd5934300fba97a.html">Gmail Letter Check (feature)</a>
+                        <a class="tagLink" href="715d58daa0911f7fb3650bd48317dc4f4488ada65452db784d3661c5f79ed849.html">Gmailtests (feature)</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+-->
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><img class="story-outcome-icon" src="images/fail.png" /></span>
+                            <span class="test-case-caption">Test Outcome</span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Login to Gmail
+                                    <span class="related-issue-title">(<a target="_blank" href="https://jira.softserveinc.com/browse/CEMTA-35">CEMTA-35</a>)</span>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="story-header">Story: Letter Check</h3>
+
+                                <div class="requirementNarrativeTitle">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i><a class="tagLink" href="bb9b87323b0e8278ce9e68ab9592922187a4fceeb281333af2745f7d521a3c6d.html">Gmail Letter Check (feature)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i><a class="tagLink" href="19437c9c4730fa17a06e8ab8fd2000768602cf55097a9389e22c02112b0c79b5.html">Gmailtests (feature)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+
+	 <div class="slider-wrapper theme-default">
+		<div id="slider">
+                <img src="c6d665ee819efed24d2311d74d6ddf3c_NONE.png" alt="" title="Open Gmail Page Step" width="1349"/>
+                <img src="e88b4fde67348b78a2da4ce1cbae843e_NONE.png" alt="User name from page  is different from model testmail8601@gmail.com" title="Login: &lt;span class='step-parameter'&gt;testmail8601, qqqqqqqqqqq, testmail8601@gmail.com&lt;/span&gt;" width="1366"/>
+        </div>
+	  </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.0.38</span>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: tests.GmailLoginTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 101.307 sec <<< FAILURE!
+CheckingLetter(tests.GmailLoginTest)  Time elapsed: 54.741 sec  <<< FAILURE!
+java.lang.AssertionError: User name from page  is different from model testmail8601@gmail.com
+	at steps.LetterSteps.login(LetterSteps.java:26)
+	at tests.GmailLoginTest.CheckingLetter(GmailLoginTest.java:52)
+LoginTest(tests.GmailLoginTest)  Time elapsed: 36.628 sec  <<< FAILURE!
+java.lang.AssertionError: User name from page  is different from model testmail8601@gmail.com
+	at steps.LetterSteps.login(LetterSteps.java:26)
+	at tests.GmailLoginTest.LoginTest(GmailLoginTest.java:46)

@@ -1,0 +1,34 @@
+<acceptance-test-run title="CheckingLetter" name="CheckingLetter" steps="4" successful="1" failures="1" skipped="2" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="44040" timestamp="2015-11-11T21:30:33.707+02:00">
+  <user-story id="requirements.Application.GmailLetterCheck.LetterCheck" name="Letter check" path="requirements.Application.GmailLetterCheck">
+    <feature id="requirements.Application.GmailLetterCheck" name="Gmail letter check"/>
+  </user-story>
+  <issues>
+    <issue>CEMTA-35</issue>
+  </issues>
+  <tags>
+    <tag name="Gmail letter check" type="feature"/>
+    <tag name="GmailTests" type="feature"/>
+    <tag name="Letter check" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="4331">
+    <screenshots>
+      <screenshot image="c6d665ee819efed24d2311d74d6ddf3c_NONE.png"/>
+    </screenshots>
+    <description>Open Gmail Page Step</description>
+  </test-step>
+  <test-step result="FAILURE" duration="21007">
+    <screenshots>
+      <screenshot image="e88b4fde67348b78a2da4ce1cbae843e_NONE.png"/>
+    </screenshots>
+    <description>Login: &lt;span class=&apos;step-parameter&apos;&gt;testmail8601, qqqqqqqqqqq, testmail8601@gmail.com&lt;/span&gt;</description>
+    <error>User name from page  is different from model testmail8601@gmail.com</error>
+    <exception>java.lang.AssertionError:User name from page  is different from model testmail8601@gmail.com&#xd;
+[tests.GmailLoginTest.CheckingLetter(GmailLoginTest.java:52)]</exception>
+  </test-step>
+  <test-step result="SKIPPED" duration="615">
+    <description>Open letter: &lt;span class=&apos;step-parameter&apos;&gt;TRETYAK Roman&lt;/span&gt;</description>
+  </test-step>
+  <test-step result="SKIPPED" duration="551">
+    <description>Check letter content: &lt;span class=&apos;step-parameter&apos;&gt;TRETYAK Roman, Hello World, Automation Test&lt;/span&gt;</description>
+  </test-step>
+</acceptance-test-run>

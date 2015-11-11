@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Letter check","CheckingLetter","FAILURE","2015-11-11T21:30:33.707+02:00","0.0","44.04"
+"Habr check","Habr Menu Test","SUCCESS","2015-11-11T21:32:03.055+02:00","0.0","35.83"
+"Letter check","Login to Gmail","FAILURE","2015-11-11T21:31:19.012+02:00","0.0","36.6"
